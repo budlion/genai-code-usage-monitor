@@ -151,7 +151,7 @@ class AlertSystem:
             alert = Alert(
                 level=level,
                 message=message,
-                severity=int(percentage),
+                severity=min(int(percentage), 100),  # Cap severity at 100
                 metric_type=metric_type,
                 current_value=current_value,
                 threshold_value=limit_value * (level.threshold / 100),

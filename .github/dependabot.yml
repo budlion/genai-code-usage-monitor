@@ -1,0 +1,44 @@
+version: 2
+updates:
+  # GitHub Actions dependencies
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    reviewers:
+      - "budlion"
+    open-pull-requests-limit: 10
+
+  # Python dependencies
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "python"
+    reviewers:
+      - "budlion"
+    open-pull-requests-limit: 10
+    allow:
+      - dependency-type: "all"
+    groups:
+      development-dependencies:
+        patterns:
+          - "pytest*"
+          - "ruff"
+          - "black"
+          - "isort"
+          - "mypy"
+      production-dependencies:
+        patterns:
+          - "*"

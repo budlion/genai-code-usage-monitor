@@ -23,13 +23,13 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Virtual Environment
+# Virtual environments
 venv/
 ENV/
 env/
 .venv
 
-# IDE
+# IDEs
 .vscode/
 .idea/
 *.swp
@@ -40,29 +40,44 @@ env/
 # Testing
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
+.tox/
+.nox/
 coverage.xml
 *.cover
 .hypothesis/
 
-# mypy
+# Type checking
 .mypy_cache/
 .dmypy.json
 dmypy.json
-
-# ruff
-.ruff_cache/
+.pytype/
 
 # Distribution
 *.whl
+*.tar.gz
 
 # Logs
 *.log
+logs/
 
-# Config
+# Data files
+data/
+*.db
+*.sqlite
+
+# Environment variables
 .env
 .env.local
-config.local.yaml
+.env.*.local
 
-# Application specific
-.codex-monitor/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

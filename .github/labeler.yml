@@ -1,0 +1,30 @@
+# Automatically label PRs based on changed files
+
+documentation:
+  - '**/*.md'
+  - 'docs/**/*'
+
+tests:
+  - 'tests/**/*'
+  - '**/*test*.py'
+
+dependencies:
+  - 'requirements*.txt'
+  - 'pyproject.toml'
+  - 'setup.py'
+
+core:
+  - 'src/genai_code_usage_monitor/core/**/*'
+
+ui:
+  - 'src/genai_code_usage_monitor/ui/**/*'
+
+cli:
+  - 'src/genai_code_usage_monitor/cli/**/*'
+
+platforms:
+  - 'src/genai_code_usage_monitor/platforms/**/*'
+
+ci:
+  - '.github/**/*'
+  - '.github/workflows/**/*'
