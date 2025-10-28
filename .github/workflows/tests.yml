@@ -110,7 +110,7 @@ jobs:
         pytest tests/ --cov=src/genai_code_usage_monitor --cov-report=html --cov-report=term
 
     - name: Upload coverage HTML
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: coverage-report
         path: htmlcov/
