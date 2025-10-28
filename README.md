@@ -1,409 +1,457 @@
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A177F7&center=true&vCenter=true&width=940&lines=GenAI+Code+Usage+Monitor;Real-time+AI+API+Monitoring+%F0%9F%9A%80;OpenAI+%2B+Claude+%E2%9C%A8" alt="Typing SVG" />
+
 # 🎯 GenAI Code Usage Monitor
 
-[![PyPI Version](https://img.shields.io/badge/pypi-v1.0.0-blue.svg)](https://pypi.org/project/genai-code-usage-monitor/)
-[![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Dual Platform](https://img.shields.io/badge/platform-Codex%20%2B%20Claude-blueviolet.svg)](https://github.com/yourusername/genai-code-usage-monitor)
-[![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1%20AA-green.svg)](https://www.w3.org/WAI/WCAG2AA-Conformance)
+### *The Ultimate Real-Time Terminal Dashboard for Your AI APIs*
 
-A beautiful real-time terminal monitoring tool for **OpenAI Codex/GPT** and **Claude Code** APIs with advanced analytics, machine learning-based predictions, WCAG-compliant theming, and Rich UI visualizations. Track your token consumption (including cached tokens with 90% discount), burn rate, cost analysis, and get intelligent predictions about usage limits with a 4-level alert system.
-
-**Inspired by** [Claude Code Usage Monitor](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor) with full feature parity adapted for both OpenAI and Claude APIs.
+<p align="center">
+  <strong>Monitor OpenAI Codex & Claude Code APIs with Style and Precision</strong>
+</p>
 
 ---
 
-## 📑 Table of Contents
+### Languages / 语言
 
-- [🎉 What's New](#-whats-new)
-- [✨ Key Features](#-key-features)
-- [🚀 Quick Start](#-quick-start)
-- [🚀 Installation](#-installation)
-- [📖 Usage](#-usage)
-- [🔧 Configuration](#-configuration)
-- [📊 Features & How It Works](#-features--how-it-works)
-- [🚀 Usage Examples](#-usage-examples)
-- [🔍 Architecture](#-architecture)
-- [📚 Documentation](#-documentation)
-- [🤝 Contributing](#-contributing)
-- [📝 License](#-license)
+**English** | [中文](./README.zh-CN.md)
 
-## 🎉 What's New
+---
 
-### Latest Enhancements
+<p>
+  <a href="https://pypi.org/project/genai-code-usage-monitor/">
+    <img src="https://img.shields.io/badge/pypi-v2.1.0-blue.svg?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Version"/>
+  </a>
+  <a href="https://python.org">
+    <img src="https://img.shields.io/badge/python-3.9+-blue.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python Version"/>
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License"/>
+  </a>
+</p>
 
-- **🌐 Dual Platform Support** - Monitor both OpenAI Codex/GPT and Claude Code APIs from a single tool with unified interface and platform abstraction layer
-- **🎨 WCAG-Compliant Themes** - Three accessible themes (Light/Dark/Classic) with automatic terminal background detection and WCAG 2.1 AA compliance (4.5:1+ contrast ratios)
-- **📊 Advanced Visualizations** - Interactive charts (trend lines, gauges, heat maps, waterfall charts) using Unicode characters for rich terminal display
-- **💾 Cached Token Calculation** - Track Claude's cached tokens with automatic 90% discount calculation, cache hit rate monitoring, and savings analytics
-- **⚠️ Multi-Level Alert System** - 4-tier alerting (INFO/WARNING/CRITICAL/DANGER) with smart thresholds, color-coded warnings, and actionable recommendations
-- **🔮 Enhanced Predictions** - Intelligent cost and token forecasting based on burn rate analysis with confidence scores and time-to-limit estimation
+<p>
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"/>
+  </a>
+  <a href="https://github.com/yourusername/genai-code-usage-monitor">
+    <img src="https://img.shields.io/badge/platform-Codex%20%2B%20Claude-blueviolet.svg?style=for-the-badge&logo=openai&logoColor=white" alt="Platform"/>
+  </a>
+  <a href="https://www.w3.org/WAI/WCAG2AA-Conformance">
+    <img src="https://img.shields.io/badge/WCAG-2.1%20AA-green.svg?style=for-the-badge" alt="WCAG"/>
+  </a>
+</p>
 
-### Why These Features Matter
+<p>
+  <img src="https://img.shields.io/badge/Rich%20UI-Terminal-ff69b4?style=for-the-badge&logo=windowsterminal&logoColor=white" alt="Rich UI"/>
+  <img src="https://img.shields.io/badge/Real--time-Monitoring-00d4ff?style=for-the-badge&logo=grafana&logoColor=white" alt="Monitoring"/>
+  <img src="https://img.shields.io/badge/ML-Predictions-orange?style=for-the-badge&logo=tensorflow&logoColor=white" alt="ML"/>
+</p>
 
-**Dual Platform Support**: Switch seamlessly between OpenAI and Claude APIs without changing your workflow. Compare costs and performance across platforms.
+<img src="https://user-images.githubusercontent.com/placeholder/demo.gif" width="800" alt="Demo GIF" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
 
-**WCAG Compliance**: Accessible to all users with proper contrast ratios and screen reader friendly output. Works great in both light and dark environments.
+*Experience real-time monitoring with beautiful terminal UI, intelligent alerts, and ML-powered predictions*
 
-**Cached Tokens**: Save up to 90% on Claude API costs by tracking and optimizing cached prompt usage. See real-time savings.
+[🚀 Quick Start](#-quick-start) • [✨ Features](#-features) • [📖 Documentation](#-documentation) • [🤝 Contributing](#-contributing)
 
-**Smart Alerts**: Know exactly when to take action with progressive alert levels. Never exceed your budget unexpectedly.
+</div>
 
-## ✨ Key Features
+---
 
-### 🚀 **v1.0.0 - Full Feature Release**
+## 🌟 Why Choose GenAI Code Usage Monitor?
 
-- **🔮 ML-based predictions** - P90 percentile calculations and intelligent session limit detection
-- **🔄 Real-time monitoring** - Configurable refresh rates (1-60s) with intelligent display updates (0.1-20 Hz)
-- **📊 Advanced Rich UI** - Beautiful color-coded progress bars, tables, and layouts with WCAG-compliant contrast
-- **🤖 Smart auto-detection** - Automatic plan switching with custom limit discovery
-- **📋 Enhanced plan support** - Multiple plans: Free Tier, Pay-As-You-Go, Tier 1/2, Custom (P90-based)
-- **⚠️ Advanced warning system** - Multi-level alerts with cost and time predictions
-- **💼 Professional Architecture** - Modular design with Single Responsibility Principle (SRP) compliance
-- **🎨 Intelligent theming** - Scientific color schemes with automatic terminal background detection
-- **⏰ Advanced scheduling** - Auto-detected system timezone and time format preferences
-- **📈 Cost analytics** - Model-specific pricing with comprehensive token calculations
-- **🔧 Pydantic validation** - Type-safe configuration with automatic validation
-- **📝 Comprehensive logging** - Optional file logging with configurable levels
-- **⚡ Performance optimized** - Advanced caching and efficient data processing
+<table>
+<tr>
+<td width="50%">
 
-### 📋 Default Custom Plan
+### 🎨 **Beautiful & Accessible**
+- WCAG 2.1 AA compliant color schemes
+- Auto-detects terminal background
+- Rich terminal UI with progress bars
+- Three stunning themes: Light, Dark, Classic
 
-The **Custom plan** is the default option, designed for flexible usage monitoring. It monitors three critical metrics:
-- **Token usage** - Tracks your token consumption
-- **API calls** - Monitors number of API requests
-- **Cost usage** - The most important metric for budget control
+</td>
+<td width="50%">
 
-The Custom plan automatically adapts to your usage patterns by analyzing your sessions from the last 192 hours (8 days) and calculating personalized limits based on your actual usage using P90 analysis.
+### 🚀 **Dual Platform Support**
+- Monitor OpenAI Codex/GPT APIs
+- Track Claude Code usage
+- Unified interface for both platforms
+- Compare costs across platforms
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 💰 **Cost Optimization**
+- Track cached tokens (90% discount!)
+- Real-time burn rate analysis
+- Budget alerts & recommendations
+- ML-based usage predictions
+
+</td>
+<td width="50%">
+
+### ⚡ **Smart & Fast**
+- P90 percentile analytics
+- 4-level alert system (INFO/WARNING/CRITICAL/DANGER)
+- Configurable refresh rates
+- Multi-threaded architecture
+
+</td>
+</tr>
+</table>
+
+---
+
+## ✨ Features
+
+### 🔥 Core Features
+
+```ascii
+┌─────────────────────────────────────────────────────────────────┐
+│  🎯 Dual Platform Support    │  📊 Advanced Analytics          │
+│  🎨 WCAG-Compliant Themes    │  💾 Cached Token Tracking       │
+│  ⚠️  4-Level Alert System     │  🔮 ML-Based Predictions        │
+│  📈 Multiple View Modes       │  🚀 Real-Time Monitoring        │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+<details>
+<summary>🔍 Click to see all features in detail</summary>
+
+#### 🌐 **Dual Platform Support**
+- ✅ OpenAI Codex/GPT API monitoring
+- ✅ Claude Code API monitoring
+- ✅ Platform auto-detection
+- ✅ Side-by-side comparison mode
+- ✅ Platform-specific features (cache tracking for Claude)
+
+#### 📊 **Advanced Analytics**
+- ✅ Token usage tracking (input/output/cached)
+- ✅ Cost calculation with model-specific pricing
+- ✅ Burn rate analysis
+- ✅ P90 percentile calculations
+- ✅ Session limit predictions
+
+#### 🎨 **Professional UI**
+- ✅ Rich terminal layouts with color-coded progress bars
+- ✅ Three WCAG-compliant themes (Light/Dark/Classic)
+- ✅ Automatic terminal background detection
+- ✅ Responsive design that adapts to terminal size
+- ✅ Unicode charts and visualizations
+
+#### ⚠️ **Intelligent Alerts**
+- ✅ 4-tier alerting: INFO → WARNING → CRITICAL → DANGER
+- ✅ Smart threshold detection
+- ✅ Actionable recommendations
+- ✅ Time-to-limit estimation
+
+#### 💾 **Cache Optimization** (Claude)
+- ✅ Cached token tracking with 90% discount
+- ✅ Cache hit rate monitoring
+- ✅ Real-time savings analytics
+- ✅ Cache efficiency recommendations
+
+#### 🔮 **ML Predictions**
+- ✅ Usage trend forecasting
+- ✅ Cost projections
+- ✅ Confidence scores
+- ✅ Intelligent limit detection
+
+</details>
+
+---
 
 ## 🚀 Quick Start
 
-### Single Platform Monitoring
+### ⚡ Installation (Choose One)
+
+<table>
+<tr>
+<td width="33%">
+
+#### 🎯 **uv (Recommended)**
+```bash
+# Install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Install tool
+uv tool install genai-code-usage-monitor
+
+# Run
+code-monitor
+```
+✅ Isolated environment
+✅ No conflicts
+✅ Easy updates
+
+</td>
+<td width="33%">
+
+#### 📦 **pip**
+```bash
+# Install
+pip install genai-code-usage-monitor
+
+# Add to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# Run
+code-monitor
+```
+✅ Simple
+✅ Familiar
+✅ Works everywhere
+
+</td>
+<td width="33%">
+
+#### 🍺 **Homebrew**
+```bash
+# Install
+brew install code-monitor
+
+# Run
+code-monitor
+```
+✅ Native macOS
+✅ Auto-updates
+✅ Clean uninstall
+
+</td>
+</tr>
+</table>
+
+### 🎬 First Run
 
 ```bash
-# Monitor OpenAI Codex/GPT usage (default)
+# Set your API key
+export OPENAI_API_KEY="sk-..."
+# or
+export ANTHROPIC_API_KEY="sk-ant-..."
+
+# Launch monitor
 code-monitor
 
-# Monitor Claude Code usage
+# 🎉 That's it! Monitor is running
+```
+
+---
+
+## 📸 Screenshots & Demos
+
+<div align="center">
+
+### 🌙 Dark Theme
+![Dark Theme](https://via.placeholder.com/800x400/1a1b26/c0caf5?text=Dark+Theme+Preview)
+
+### ☀️ Light Theme
+![Light Theme](https://via.placeholder.com/800x400/d5d6db/4c4f69?text=Light+Theme+Preview)
+
+### 🎨 Classic Theme
+![Classic Theme](https://via.placeholder.com/800x400/000000/00ff00?text=Classic+Theme+Preview)
+
+</div>
+
+---
+
+## 💡 Usage Examples
+
+### 🎯 **Single Platform**
+
+```bash
+# Monitor OpenAI (default)
+code-monitor
+
+# Monitor Claude
 code-monitor --platform claude
 
-# Auto-detect platform from environment
+# Auto-detect from environment
 code-monitor --platform auto
 ```
 
-### Compare Both Platforms
+### 🔄 **Dual Platform**
 
 ```bash
-# View usage from both platforms side-by-side
+# Monitor both platforms side-by-side
 code-monitor --platform both
 
 # Export comparison report
-code-monitor --platform both --export comparison-report.json
+code-monitor --platform both --export comparison.json
 ```
 
-### Theme Selection
+### 🎨 **Theme Selection**
 
 ```bash
-# Auto-detect best theme (default)
+# Auto-detect (recommended)
 code-monitor --theme auto
 
-# Use dark theme for dark terminals
+# Specific themes
 code-monitor --theme dark
-
-# Use light theme for bright environments
 code-monitor --theme light
-
-# Classic theme for compatibility
 code-monitor --theme classic
 ```
 
-### Quick Verification
-
-After installation, verify everything works:
+### ⚙️ **Advanced Configuration**
 
 ```bash
-# Check version and configuration
-code-monitor --version
-code-monitor --help
-
-# Test with your API key
-export OPENAI_API_KEY="your-key"
-code-monitor --plan custom
-
-# Or for Claude
-export ANTHROPIC_API_KEY="your-key"
-code-monitor --platform claude
-```
-
-## 🚀 Installation
-
-### ⚡ Modern Installation with uv (Recommended)
-
-**Why uv is the best choice:**
-- ✅ Creates isolated environments automatically (no system conflicts)
-- ✅ No Python version issues
-- ✅ No "externally-managed-environment" errors
-- ✅ Easy updates and uninstallation
-- ✅ Works on all platforms
-
-```bash
-# Install uv if you haven't already
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Install from PyPI with uv (easiest)
-uv tool install genai-code-usage-monitor
-
-# Run from anywhere
-code-monitor
-```
-
-### 📦 Installation with pip
-
-```bash
-# Install from PyPI
-pip install genai-code-usage-monitor
-
-# If code-monitor command is not found, add ~/.local/bin to PATH:
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc  # or restart your terminal
-
-# Run from anywhere
-code-monitor
-```
-
-### 🛠️ Other Package Managers
-
-#### pipx (Isolated Environments)
-```bash
-pipx install genai-code-usage-monitor
-code-monitor
-```
-
-#### conda/mamba
-```bash
-pip install genai-code-usage-monitor
-code-monitor
-```
-
-### 🔧 Development Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/genai-code-usage-monitor.git
-cd genai-code-usage-monitor
-
-# Install in development mode
-pip install -e .
-
-# Run from source
-python -m genai_code_usage_monitor
-```
-
-## 📖 Usage
-
-### Get Help
-
-```bash
-# Show help information
-code-monitor --help
-```
-
-### Basic Usage
-
-```bash
-# Default (Custom plan with auto-detection)
-code-monitor
-
-# Exit the monitor
-# Press Ctrl+C to gracefully exit
-```
-
-### Configuration Options
-
-#### Specify Your Plan
-
-```bash
-# Custom plan with P90 auto-detection (Default)
-code-monitor --plan custom
-
-# Free tier plan
-code-monitor --plan free
-
-# Pay-as-you-go plan
-code-monitor --plan payg
-
-# Tier 1 plan (1M tokens/day)
-code-monitor --plan tier1
-
-# Tier 2 plan (5M tokens/day)
-code-monitor --plan tier2
-
-# Custom plan with explicit token limit
+# Custom plan with token limit
 code-monitor --plan custom --custom-limit-tokens 100000
 
-# Custom plan with cost limit
-code-monitor --plan custom --custom-limit-cost 50.0
-```
-
-#### Usage View Configuration
-
-```bash
-# Real-time monitoring with live updates (Default)
-code-monitor --view realtime
-
-# Daily token usage aggregated in table format
-code-monitor --view daily
-
-# Monthly token usage aggregated in table format
-code-monitor --view monthly
-```
-
-#### Performance and Display Configuration
-
-```bash
-# Adjust refresh rate (1-60 seconds, default: 10)
+# Fast refresh for active development
 code-monitor --refresh-rate 5
 
-# Adjust display refresh rate (0.1-20 Hz, default: 0.75)
-code-monitor --refresh-per-second 1.0
+# Debug mode with logging
+code-monitor --debug --log-file monitor.log
 
-# Set time format (auto-detected by default)
-code-monitor --time-format 24h  # or 12h
-
-# Force specific theme
-code-monitor --theme dark  # light, dark, classic, auto
-
-# Clear saved configuration
-code-monitor --clear
-```
-
-#### Timezone Configuration
-
-```bash
-# Use US Eastern Time
+# Different timezone
 code-monitor --timezone America/New_York
-
-# Use Tokyo time
-code-monitor --timezone Asia/Tokyo
-
-# Use UTC
-code-monitor --timezone UTC
-
-# Use London time
-code-monitor --timezone Europe/London
 ```
 
-#### Logging and Debugging
+---
+
+## 📊 Monitoring Plans
+
+<div align="center">
+
+| Plan | Token Limit | Cost Limit | Best For | Command |
+|:----:|:-----------:|:----------:|:--------:|:--------|
+| 🆓 **Free** | 100,000 | $0 | Free tier users | `--plan free` |
+| 💳 **Pay-As-You-Go** | Unlimited | $100 | Flexible usage | `--plan payg` |
+| 🥉 **Tier 1** | 1,000,000 | $50 | Medium usage | `--plan tier1` |
+| 🥇 **Tier 2** | 5,000,000 | $250 | Heavy usage | `--plan tier2` |
+| 🎯 **Custom** | P90-based | $50 | Intelligent detection | `--plan custom` ⭐ |
+
+</div>
+
+> 💡 **Tip**: The Custom plan (default) automatically learns from your usage patterns using P90 analysis!
+
+---
+
+## 🏗️ Architecture
+
+<div align="center">
+
+```mermaid
+graph TB
+    A[🎯 CLI Interface] --> B[📊 Display Controller]
+    A --> C[🔧 Configuration]
+
+    B --> D[🎨 UI Layer]
+    B --> E[📈 Data Layer]
+
+    D --> F[Rich Layouts]
+    D --> G[Progress Bars]
+    D --> H[Themes]
+
+    E --> I[🌐 Platform Layer]
+
+    I --> J[OpenAI Adapter]
+    I --> K[Claude Adapter]
+
+    J --> L[OpenAI API]
+    K --> M[Claude API]
+
+    style A fill:#a177f7,stroke:#7c3aed,stroke-width:3px,color:#fff
+    style B fill:#60a5fa,stroke:#3b82f6,stroke-width:2px,color:#fff
+    style I fill:#34d399,stroke:#10b981,stroke-width:2px,color:#fff
+    style L fill:#f97316,stroke:#ea580c,stroke-width:2px,color:#fff
+    style M fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#fff
+```
+
+</div>
+
+### 📦 Project Structure
+
+```
+genai-code-usage-monitor/
+├── 🎯 cli/                    # Command-line interface
+├── 🧠 core/                   # Business logic
+│   ├── models.py              # Data models
+│   ├── plans.py               # Plan definitions
+│   ├── pricing.py             # Cost calculator
+│   ├── alerts.py              # Alert system
+│   └── p90_calculator.py      # ML analytics
+├── 🌐 platforms/              # Platform abstraction
+│   ├── base.py                # Platform interface
+│   ├── codex.py               # OpenAI adapter
+│   └── claude.py              # Claude adapter
+├── 🎨 ui/                     # UI components
+│   ├── display.py             # Rich display
+│   ├── themes.py              # WCAG themes
+│   └── visualizations.py      # Charts & graphs
+└── 🛠️ utils/                  # Utilities
+    └── time_utils.py          # Time functions
+```
+
+---
+
+## 📚 Documentation
+
+<div align="center">
+
+### 📖 Comprehensive Guides
+
+| Category | Document | Description |
+|:--------:|:---------|:------------|
+| 🚀 | [QUICKSTART.md](QUICKSTART.md) | Fast-track guide for new users |
+| 📘 | [USAGE_GUIDE.md](USAGE_GUIDE.md) | Complete usage documentation |
+| 🌐 | [PLATFORM_QUICK_REFERENCE.md](PLATFORM_QUICK_REFERENCE.md) | Dual platform support guide |
+| 🎨 | [THEME_SYSTEM.md](THEME_SYSTEM.md) | Complete theming documentation |
+| 💾 | [docs/CACHE_AND_ALERTS.md](docs/CACHE_AND_ALERTS.md) | Cached tokens & alert system |
+| 📊 | [VISUALIZATION_GUIDE.md](VISUALIZATION_GUIDE.md) | Charts & visual components |
+| 🏗️ | [PLATFORM_LAYER_SUMMARY.md](PLATFORM_LAYER_SUMMARY.md) | Platform architecture |
+| 📜 | [CHANGELOG.md](CHANGELOG.md) | Version history & updates |
+
+</div>
+
+---
+
+## 🎓 Learn By Example
+
+<details>
+<summary>🌅 <strong>Morning Developer</strong> - Reset at 9 AM</summary>
 
 ```bash
-# Enable debug logging
-code-monitor --debug
+# Set custom reset time aligned with work schedule
+code-monitor --reset-hour 9 --timezone America/New_York
 
-# Log to file
-code-monitor --log-file ~/.genai-code-usage-monitor/logs/monitor.log
-
-# Set log level
-code-monitor --log-level WARNING  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+# Start monitoring when you begin coding
+code-monitor --plan custom --refresh-rate 5
 ```
 
-## 📊 Features & How It Works
+</details>
 
-### Current Features
-
-#### 🔄 Advanced Real-time Monitoring
-- Configurable update intervals (1-60 seconds)
-- High-precision display refresh (0.1-20 Hz)
-- Intelligent change detection to minimize CPU usage
-- Multi-threaded orchestration with callback system
-
-#### 📊 Rich UI Components
-- **Progress Bars**: WCAG-compliant color schemes with scientific contrast ratios
-- **Data Tables**: Sortable columns with model-specific statistics
-- **Layout Manager**: Responsive design that adapts to terminal size
-- **Theme System**: Auto-detects terminal background for optimal readability
-
-#### 📈 Multiple Usage Views
-- **Realtime View** (Default): Live monitoring with progress bars, current session data, and burn rate analysis
-- **Daily View**: Aggregated daily statistics showing Date, Models, Input/Output tokens, Total tokens, and Cost
-- **Monthly View**: Monthly aggregated data for long-term trend analysis and budget planning
-
-#### 🔮 Machine Learning Predictions
-- **P90 Calculator**: 90th percentile analysis for intelligent limit detection
-- **Burn Rate Analytics**: Multi-session consumption pattern analysis
-- **Cost Projections**: Model-specific pricing with token calculations
-- **Trend Forecasting**: Predicts usage trends based on historical patterns
-
-### Available Plans
-
-| Plan | Token Limit | Cost Limit | Best For |
-|------|-------------|------------|----------|
-| **free** | 100,000 | $0 | Free tier users |
-| **payg** | Unlimited | $100 (default) | Pay-as-you-go users |
-| **tier1** | 1,000,000 | $50 | Medium usage |
-| **tier2** | 5,000,000 | $250 | Heavy usage |
-| **custom** | P90-based | $50 (default) | Intelligent detection (default) |
-
-### Technical Requirements
-
-#### Dependencies
-
-```toml
-# Core dependencies (automatically installed)
-openai>=1.0.0               # OpenAI API client
-pytz>=2023.3                # Timezone handling
-rich>=13.7.0                # Rich terminal UI
-pydantic>=2.0.0             # Type validation
-pydantic-settings>=2.0.0    # Configuration management
-numpy>=1.21.0               # Statistical calculations
-requests>=2.31.0            # HTTP requests
-pyyaml>=6.0                 # Configuration files
-```
-
-#### Python Requirements
-
-- **Minimum**: Python 3.9+
-- **Recommended**: Python 3.11+
-- **Tested on**: Python 3.9, 3.10, 3.11, 3.12
-
-## 🚀 Usage Examples
-
-### Common Scenarios
-
-#### 🌅 Morning Developer
-Start work at 9 AM and want tokens to reset aligned with your schedule.
-
-```bash
-# Set custom reset time to 9 AM
-code-monitor --reset-hour 9
-
-# With your timezone
-code-monitor --reset-hour 9 --timezone US/Eastern
-```
-
-#### 🌙 Night Owl Coder
-Work past midnight and need flexible reset scheduling.
+<details>
+<summary>🌙 <strong>Night Owl</strong> - Late night coding sessions</summary>
 
 ```bash
 # Reset at midnight for clean daily boundaries
 code-monitor --reset-hour 0
 
-# Late evening reset (11 PM)
-code-monitor --reset-hour 23
+# Or late evening reset
+code-monitor --reset-hour 23 --timezone UTC
 ```
 
-#### 🔄 Heavy User with Variable Limits
-Your usage varies significantly and you need intelligent limit detection.
+</details>
+
+<details>
+<summary>🔄 <strong>Heavy User</strong> - Variable usage patterns</summary>
 
 ```bash
 # Auto-detect from historical usage
 code-monitor --plan custom
 
 # Monitor with custom scheduling
-code-monitor --plan custom --reset-hour 6
+code-monitor --plan custom --reset-hour 6 --refresh-rate 3
 ```
 
-#### 🌍 International User
-Working across different timezones or traveling.
+</details>
+
+<details>
+<summary>🌍 <strong>International Team</strong> - Multiple timezones</summary>
 
 ```bash
 # US East Coast
@@ -413,116 +461,254 @@ code-monitor --timezone America/New_York
 code-monitor --timezone Europe/London
 
 # Asia Pacific
-code-monitor --timezone Asia/Singapore
+code-monitor --timezone Asia/Tokyo
 
-# UTC for international team coordination
+# UTC for coordination
 code-monitor --timezone UTC --reset-hour 12
 ```
 
-### Best Practices
+</details>
 
-#### Setup Best Practices
+---
 
-1. **Start Early in Sessions**
-   ```bash
-   # Begin monitoring when starting development work
-   code-monitor
-   ```
-   - Gives accurate usage tracking from the start
-   - Better cost predictions
-   - Early warning for limit approaches
+## 🔧 Advanced Features
 
-2. **Use Modern Installation (Recommended)**
-   ```bash
-   # Easy installation and updates with uv
-   uv tool install genai-code-usage-monitor
-   code-monitor --plan custom
-   ```
+### 🎯 Alert System
 
-3. **Monitor Burn Rate**
-   - Watch for sudden spikes in token consumption
-   - Adjust coding intensity based on remaining budget
-   - Plan big projects around reset times
-
-## 🔍 Architecture
-
-### Modular Design (SRP Compliance)
-
-```
-genai-code-usage-monitor/
-├── src/genai_code_usage_monitor/
-│   ├── cli/                # CLI interface layer
-│   ├── core/               # Core business logic
-│   │   ├── models.py       # Data models
-│   │   ├── plans.py        # Plan definitions
-│   │   ├── pricing.py      # Pricing calculator
-│   │   ├── settings.py     # Configuration
-│   │   ├── alerts.py       # Alert system
-│   │   └── p90_calculator.py
-│   ├── data/               # Data layer
-│   │   └── api_client.py   # API interaction
-│   ├── platforms/          # Platform abstraction
-│   │   ├── base.py         # Platform interface
-│   │   ├── codex.py        # OpenAI adapter
-│   │   └── claude.py       # Claude adapter
-│   ├── ui/                 # UI components
-│   │   ├── display.py      # Rich display
-│   │   ├── themes.py       # WCAG themes
-│   │   ├── progress_bars.py # Enhanced progress
-│   │   └── visualizations.py # Charts & graphs
-│   └── utils/              # Utilities
-│       └── time_utils.py   # Time functions
+```bash
+# 4-Level Progressive Alerts
+┌──────────────┬─────────────┬──────────────────────────────┐
+│ Level        │ Threshold   │ Action                       │
+├──────────────┼─────────────┼──────────────────────────────┤
+│ 📘 INFO      │ < 50%       │ Continue normally            │
+│ ⚠️  WARNING   │ 50-75%      │ Monitor usage                │
+│ 🔶 CRITICAL  │ 75-90%      │ Reduce consumption           │
+│ 🔴 DANGER    │ > 90%       │ Immediate action required    │
+└──────────────┴─────────────┴──────────────────────────────┘
 ```
 
-## 📚 Documentation
+### 💾 Cache Optimization (Claude)
 
-Comprehensive guides and references for all features:
+```bash
+# Track cached tokens with 90% discount
+code-monitor --platform claude
 
-### Getting Started
-- [QUICKSTART.md](QUICKSTART.md) - Fast-track guide for new users
-- [INSTALLATION_TEST_REPORT.md](INSTALLATION_TEST_REPORT.md) - Installation validation and troubleshooting
-- [USAGE_GUIDE.md](USAGE_GUIDE.md) - Complete usage documentation
+# View cache statistics
+# • Cache Hit Rate: 45%
+# • Savings: $12.50 (90% discount)
+# • Cached Tokens: 125,000
+# • Cache Efficiency: High ✅
+```
 
-### Feature Guides
-- [PLATFORM_QUICK_REFERENCE.md](PLATFORM_QUICK_REFERENCE.md) - Dual platform support guide
-- [VISUALIZATION_GUIDE.md](VISUALIZATION_GUIDE.md) - Charts, graphs, and visual components
-- [docs/CACHE_AND_ALERTS.md](docs/CACHE_AND_ALERTS.md) - Cached tokens and alert system
-- [docs/THEME_QUICKSTART.md](docs/THEME_QUICKSTART.md) - Theme system and WCAG compliance
-- [THEME_SYSTEM.md](THEME_SYSTEM.md) - Complete theming documentation
+### 🔮 ML Predictions
 
-### Advanced Topics
-- [PLATFORM_LAYER_SUMMARY.md](PLATFORM_LAYER_SUMMARY.md) - Platform abstraction architecture
-- [src/genai_code_usage_monitor/platforms/README.md](src/genai_code_usage_monitor/platforms/README.md) - Platform API reference
-- [VISUAL_EXAMPLES.md](VISUAL_EXAMPLES.md) - Visual demonstrations and examples
-- [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Command quick reference
+```python
+# Intelligent forecasting based on:
+• Historical usage patterns (8 days)
+• P90 percentile analysis
+• Burn rate trends
+• Session patterns
 
-### Project Information
-- [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) - Project overview and goals
-- [CHANGELOG.md](CHANGELOG.md) - Version history and updates
-- [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
-- [FEATURE_CHECKLIST.md](FEATURE_CHECKLIST.md) - Feature implementation status
+# Predictions include:
+• Cost projections with confidence scores
+• Time to limit estimation
+• Usage trend analysis
+• Smart limit recommendations
+```
 
-### Implementation Details
-- [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md) - Technical implementation overview
-- [ENHANCEMENT_SUMMARY.md](ENHANCEMENT_SUMMARY.md) - Enhancement details
-- [THEME_ENHANCEMENT_SUMMARY.md](THEME_ENHANCEMENT_SUMMARY.md) - Theme system enhancements
-- [OPTIMIZATION_COMPLETE.md](OPTIMIZATION_COMPLETE.md) - Performance optimizations
-- [FINAL_REPORT.md](FINAL_REPORT.md) - Comprehensive project report
+---
+
+## 🛠️ Technical Requirements
+
+### 📋 Dependencies
+
+All dependencies are automatically installed:
+
+```toml
+openai>=1.0.0                 # OpenAI API client
+rich>=13.7.0                  # Terminal UI framework
+pydantic>=2.0.0               # Data validation
+pydantic-settings>=2.0.0      # Configuration
+numpy>=1.21.0                 # Statistical analysis
+pytz>=2023.3                  # Timezone support
+requests>=2.31.0              # HTTP client
+pyyaml>=6.0                   # Configuration files
+```
+
+### 🐍 Python Support
+
+<div align="center">
+
+| Version | Status | Recommended |
+|:-------:|:------:|:-----------:|
+| 3.9 | ✅ Supported | |
+| 3.10 | ✅ Supported | |
+| 3.11 | ✅ Supported | ⭐ |
+| 3.12 | ✅ Supported | ⭐ |
+
+</div>
+
+### 💻 Platform Support
+
+<div align="center">
+
+| OS | Status | Notes |
+|:--:|:------:|:------|
+| 🐧 Linux | ✅ Full Support | All distributions |
+| 🍎 macOS | ✅ Full Support | Intel & Apple Silicon |
+| 🪟 Windows | ✅ Full Support | Windows Terminal recommended |
+
+</div>
+
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+We welcome contributions! 🎉
 
-## 📝 License
+<div align="center">
 
-[MIT License](LICENSE) - feel free to use and modify as needed.
+### 🌟 Ways to Contribute
+
+| Type | Description | How to Help |
+|:----:|:------------|:------------|
+| 🐛 | Bug Reports | [Open an issue](https://github.com/yourusername/genai-code-usage-monitor/issues) |
+| 💡 | Feature Requests | [Start a discussion](https://github.com/yourusername/genai-code-usage-monitor/discussions) |
+| 📝 | Documentation | Improve guides and examples |
+| 🔧 | Code | Submit pull requests |
+| 🌍 | Translations | Help translate documentation |
+
+</div>
+
+### 🚀 Quick Contribution Guide
+
+```bash
+# 1. Fork and clone
+git clone https://github.com/yourusername/genai-code-usage-monitor.git
+cd genai-code-usage-monitor
+
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install development dependencies
+pip install -e ".[dev]"
+
+# 4. Create feature branch
+git checkout -b feature/amazing-feature
+
+# 5. Make changes and test
+pytest tests/
+
+# 6. Commit and push
+git commit -m "feat: Add amazing feature"
+git push origin feature/amazing-feature
+
+# 7. Open Pull Request 🎉
+```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
+---
+
+## 📊 Project Stats
+
+<div align="center">
+
+<img src="https://img.shields.io/github/stars/yourusername/genai-code-usage-monitor?style=social" alt="Stars"/>
+<img src="https://img.shields.io/github/forks/yourusername/genai-code-usage-monitor?style=social" alt="Forks"/>
+<img src="https://img.shields.io/github/watchers/yourusername/genai-code-usage-monitor?style=social" alt="Watchers"/>
+
+<img src="https://img.shields.io/github/issues/yourusername/genai-code-usage-monitor" alt="Issues"/>
+<img src="https://img.shields.io/github/issues-pr/yourusername/genai-code-usage-monitor" alt="Pull Requests"/>
+<img src="https://img.shields.io/github/last-commit/yourusername/genai-code-usage-monitor" alt="Last Commit"/>
+
+<img src="https://img.shields.io/github/languages/top/yourusername/genai-code-usage-monitor" alt="Top Language"/>
+<img src="https://img.shields.io/github/languages/code-size/yourusername/genai-code-usage-monitor" alt="Code Size"/>
+<img src="https://img.shields.io/tokei/lines/github/yourusername/genai-code-usage-monitor" alt="Lines of Code"/>
+
+</div>
+
+---
+
+## 📄 License
+
+<div align="center">
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+```
+MIT License - Free to use, modify, and distribute
+✅ Commercial use  ✅ Modification  ✅ Distribution  ✅ Private use
+```
+
+</div>
+
+---
+
+## 💖 Acknowledgments
+
+<div align="center">
+
+### 🙏 Special Thanks
+
+This project is inspired by [Claude Code Usage Monitor](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor)
+
+### 🛠️ Built With Amazing Tools
+
+<img src="https://img.shields.io/badge/Rich-Terminal-ff69b4?style=for-the-badge&logo=windowsterminal&logoColor=white" alt="Rich"/>
+<img src="https://img.shields.io/badge/OpenAI-API-00a67e?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI"/>
+<img src="https://img.shields.io/badge/Claude-API-8b5cf6?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude"/>
+<img src="https://img.shields.io/badge/Python-3.9+-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/Pydantic-V2-e92063?style=for-the-badge&logo=pydantic&logoColor=white" alt="Pydantic"/>
+
+</div>
+
+---
+
+## 🌟 Star History
+
+<div align="center">
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/genai-code-usage-monitor&type=Date)](https://star-history.com/#yourusername/genai-code-usage-monitor&Date)
+
+</div>
+
+---
+
+## 🔗 Links
+
+<div align="center">
+
+### 📌 Quick Links
+
+[🏠 Homepage](https://github.com/yourusername/genai-code-usage-monitor) •
+[📦 PyPI](https://pypi.org/project/genai-code-usage-monitor/) •
+[📖 Documentation](https://github.com/yourusername/genai-code-usage-monitor#readme) •
+[🐛 Issues](https://github.com/yourusername/genai-code-usage-monitor/issues) •
+[💬 Discussions](https://github.com/yourusername/genai-code-usage-monitor/discussions) •
+[📜 Changelog](CHANGELOG.md)
+
+</div>
 
 ---
 
 <div align="center">
 
-**⭐ Star this repo if you find it useful! ⭐**
+## ⭐ Star Us!
 
-[Report Bug](https://github.com/yourusername/genai-code-usage-monitor/issues) • [Request Feature](https://github.com/yourusername/genai-code-usage-monitor/issues)
+**If you find this project useful, please consider giving it a star!**
+
+<a href="https://github.com/yourusername/genai-code-usage-monitor/stargazers">
+  <img src="https://img.shields.io/github/stars/yourusername/genai-code-usage-monitor?style=social" alt="Star on GitHub"/>
+</a>
+
+### 🚀 Happy Monitoring!
+
+Made with ❤️ by the GenAI Monitor Team
+
+---
+
+<sub>🌐 <a href="./README.zh-CN.md">中文文档</a> | English</sub>
 
 </div>
