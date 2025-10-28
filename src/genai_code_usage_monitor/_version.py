@@ -1,7 +1,7 @@
 """Version information for Codex Monitor."""
 
-__version__ = "1.0.0"
-__version_info__ = (1, 0, 0)
+__version__ = "2.1.0"
+__version_info__ = (2, 1, 0)
 
 # Version history
 VERSION_HISTORY = {
@@ -33,8 +33,8 @@ def get_version_info() -> tuple:
 
 def print_version() -> None:
     """Print version information."""
-    print(f"Codex Monitor v{__version__}")
-    print(f"A real-time monitoring tool for OpenAI Codex/GPT API usage")
+    print(f"GenAI Code Usage Monitor v{__version__}")
+    print(f"A real-time monitoring tool for Generative AI APIs (OpenAI, Claude)")
 
 
 if __name__ == "__main__":

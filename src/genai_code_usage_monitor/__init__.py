@@ -1,10 +1,9 @@
-"""Codex Usage Monitor - Real-time monitoring tool for OpenAI Codex/GPT API usage."""
+"""GenAI Code Usage Monitor - Real-time monitoring tool for Generative AI APIs (OpenAI, Claude)."""
 
-__version__ = "1.0.0"
-__author__ = "Codex Monitor Team"
-__email__ = "team@codex-monitor.dev"
+from genai_code_usage_monitor._version import __version__
+from genai_code_usage_monitor._version import __version_info__
 
-from genai_code_usage_monitor._version import __version__ as _version
+__author__ = "GenAI Monitor Team"
+__email__ = "team@genai-code-usage-monitor.dev"
 
-
-__all__ = ["__version__", "__author__", "__email__"]
+__all__ = ["__version__", "__version_info__", "__author__", "__email__"]
