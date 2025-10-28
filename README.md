@@ -242,16 +242,82 @@ code-monitor
 
 ## 📸 Screenshots & Demos
 
+> 🎬 **Live Demo**: See the monitor in action below or [contribute screenshots](docs/SCREENSHOTS.md)!
+
 <div align="center">
 
-### 🌙 Dark Theme
-![Dark Theme](https://via.placeholder.com/800x400/1a1b26/c0caf5?text=Dark+Theme+Preview)
+### 🌙 Dark Theme - Real-time Monitoring
 
-### ☀️ Light Theme
-![Light Theme](https://via.placeholder.com/800x400/d5d6db/4c4f69?text=Light+Theme+Preview)
+```
+┌─────────────────────── GenAI Code Usage Monitor ────────────────────────┐
+│                                                                          │
+│  Platform: OpenAI Codex          Theme: Dark          View: Realtime   │
+│                                                                          │
+│  📊 Current Session                                                      │
+│  ├─ Input Tokens:     12,450  ████████████████████░░░░░  62%          │
+│  ├─ Output Tokens:     8,320  ██████████████░░░░░░░░░░░  41%          │
+│  ├─ Total Tokens:     20,770  ████████████████░░░░░░░░░  52%          │
+│  └─ Cost:              $0.42  █████████████████░░░░░░░░  84%          │
+│                                                                          │
+│  ⚠️  WARNING: You've used 84% of your budget                             │
+│                                                                          │
+│  🔮 Predictions                                                          │
+│  ├─ Estimated limit reach: ~2.5 hours                                  │
+│  ├─ Recommended action: Reduce token usage                             │
+│  └─ Burn rate: $0.17/hour                                              │
+│                                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+```
 
-### 🎨 Classic Theme
-![Classic Theme](https://via.placeholder.com/800x400/000000/00ff00?text=Classic+Theme+Preview)
+*Beautiful WCAG-compliant dark theme with real-time progress tracking*
+
+### ☀️ Light Theme - Daily Statistics
+
+```
+┌─────────────────────── Daily Usage Report ──────────────────────────┐
+│                                                                      │
+│  Date        Models    Input     Output    Total      Cost         │
+│  ─────────── ───────── ───────── ───────── ────────── ────────────│
+│  2025-10-28  GPT-4     45.2K     32.1K     77.3K      $1.55        │
+│  2025-10-27  GPT-4     38.7K     28.4K     67.1K      $1.34        │
+│  2025-10-26  GPT-3.5   52.3K     39.2K     91.5K      $0.18        │
+│                                                                      │
+│  📈 7-Day Average: $1.02/day    📊 Total: $7.14                     │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+*Clean light theme perfect for bright environments*
+
+### 🎨 Dual Platform - Split Screen
+
+```
+┌──────────── OpenAI Codex ────────────┬──────────── Claude Code ─────────────┐
+│                                      │                                      │
+│  📊 Usage: 52% ████████████░░░░░░░  │  📊 Usage: 38% ████████░░░░░░░░░░  │
+│  💰 Cost:  $0.42                     │  💰 Cost:  $0.28                     │
+│  📈 Tokens: 20.7K                    │  📈 Tokens: 15.2K                    │
+│                                      │  💾 Cache Hit Rate: 45%              │
+│                                      │  💰 Cache Savings: $0.12 (90% off)  │
+│                                      │                                      │
+└──────────────────────────────────────┴──────────────────────────────────────┘
+```
+
+*Monitor both platforms simultaneously with platform-specific metrics*
+
+</div>
+
+### 🎥 Want to See Real Screenshots?
+
+<div align="center">
+
+| Action | Description |
+|:------:|:------------|
+| 🚀 **[Try It Now](#-quick-start)** | Install and run the monitor yourself |
+| 📸 **[Screenshot Guide](docs/SCREENSHOTS.md)** | Learn how to capture beautiful screenshots |
+| 🤝 **[Contribute](CONTRIBUTING.md)** | Add your screenshots to the project |
+
+**Help us showcase the project!** We welcome screenshot contributions. See the [Screenshot Guide](docs/SCREENSHOTS.md) for details.
 
 </div>
 
